@@ -7,7 +7,7 @@ const Cart = ({ activeCart, setActiveCart }) => {
 				<div className="border-b-[1px] p-4 border-lightGrayishBlue">
 					<h4 className="font-[700] text-veryDarkBlue">Cart</h4>
 				</div>
-				<div className="min-h-[125px] p-4 flex justify-center items-center">
+				<div className="min-h-[175px] p-4 flex justify-center items-center">
 					<h4 className="font-[700] text-darkGrayishBlue">Your cart is empty.</h4>
 				</div>
 			</div>
