@@ -1,17 +1,17 @@
 import React from 'react';
-import { imageProduct1, iconMinus, iconPlus } from '../assets';
+import { iconMinus, iconPlus } from '../assets';
 
-const Body = () => {
+const Body = ({...props}) => {
 	return (
 		<section className="md:py-16 flex-col flex md:flex-row w-full font-Kumbh">
 			{/* left div */}
 			<div className="flex-1 flex">
 				{/* Desktop Product image */}
 				<div className="w-full md:w-[400px] hidden md:flex items-center mx-auto justify-center">
-					<img src={imageProduct1} className=" w-[100%] rounded-[10px] h-[100%]" />
+					<img src={props.image1} className=" w-[100%] rounded-[10px] h-[100%]" />
 				</div>
 				<div className="md:hidden block w-[100%] h-[325px] ">
-					<img src={imageProduct1} className="md:hidden block object-cover w-[100%]  h-[100%]" />
+					<img src={props.image1} className="md:hidden block object-cover w-[100%]  h-[100%]" />
 				</div>
 			</div>
 			{/* Right Div */}
@@ -19,26 +19,26 @@ const Body = () => {
 				{/* Product information */}
 				<h3 className="mb-2 text-orange tracking-[0.25em] text-[12px] ss:text-[14px] 
               font-[700]">
-					SNEAKER COMPANY
+					{props.company}
 				</h3>
-				<h1 className="mb-6 font-[700] text-veryDarkBlue leading-[1] text-[32px] ss:text-[40px]">
-					Fall Limited Edition <br />Sneakers
+				<h1 className="mb-6 font-[700] max-w-[300px] ss:max-w-[400px] text-veryDarkBlue leading-[1] text-[32px] ss:text-[40px]">
+					{props.edition}
 				</h1>
 				<p className="mb-6 w-[100%] md:max-w-[450px] text-darkGrayishBlue text-[16px]">
-					These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer
-					sole, they'll withstand everything the weather can offer.
+					{props.description}
 				</p>
 
 				{/* Product price */}
                 <div className="flex flex-row items-center ss:flex-col mb-4 ss:items-start justify-between">
 					<div className="flex flex-row items-center">
-						<h3 className="text-veryDarkBlue text-[24px] font-[700] mr-4">$125.00</h3>
+						<h3 className="text-veryDarkBlue text-[24px] font-[700] mr-4">${props.price}</h3>
 						<div className="bg-paleOrange px-[6px] rounded-[5px] py-[1px]">
-							<h4 className="text-orange text-[14px] font-[700]">50%</h4>
+							<h4 className="text-orange text-[14px] font-[700]">{props.discount}</h4>
 						</div>
 					</div>
                     <div>
-                        <h5 className='text-grayishBlue font-[600] text-[16px] line-through'>$250.00</h5>
+                        <h5 className='text-grayishBlue font-[600] text-[16px] line-through'>
+							${props.oldPrice}</h5>
                     </div>
 				</div>
 

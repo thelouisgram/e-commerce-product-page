@@ -19,7 +19,7 @@ import logo from './logo.svg'
 
 export {
     iconCart, iconClose, iconDelete, iconMenu, iconMinus, iconNext, iconPlus,iconPrevious,
-    imageAvatar, imageProduct1Thumbnail, imageProduct1, imageProduct2Thumbnail, 
-    imageProduct2, imageProduct3Thumbnail, imageProduct3, imageProduct4Thumbnail, imageProduct4,
+    imageAvatar, imageProduct1Thumbnail, imageProduct1, imageProduct2Thumbnail,
+     imageProduct2, imageProduct3Thumbnail, imageProduct3, imageProduct4Thumbnail, imageProduct4,
     logo
 }
