@@ -13,7 +13,7 @@ const Header = ({ setActiveCart, setMenu }) => {
 			<div className="flex items-center">
 				<img src={iconMenu} onClick={toggleMenu} className="mr-4 h-[16px] cursor-pointer w-[auto] md:hidden" />
 				<img src={logo} className="md:mr-12 h-[20px] md:h-[24px] w-[auto]" />
-				<ul className="hidden md:flex flex-row gap-8 text-darkGrayishBlue font-Kumbh text-[16px]">
+				<ul className="hidden md:flex flex-row gap-8 text-darkGrayishBlue font-Kumbh text-[14px]">
 					<li className="hover:text-black cursor-pointer">Collections</li>
 					<li className="hover:text-black cursor-pointer">Men</li>
 					<li className="hover:text-black cursor-pointer">Women</li>

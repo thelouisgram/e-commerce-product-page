@@ -1,6 +1,8 @@
-import { imageProduct1, imageProduct2, imageProduct3, imageProduct4,
+import {
+    imageProduct1, imageProduct2, imageProduct3, imageProduct4,
     imageProduct1Thumbnail, imageProduct2Thumbnail, imageProduct3Thumbnail,
-    imageProduct4Thumbnail } from './assets';
+    imageProduct4Thumbnail
+} from './assets';
 
 
 
@@ -16,14 +18,13 @@ const data = [
         price: 125.00,
         discount: '50%',
         oldPrice: 250.00,
-        image1: imageProduct1,
-        image2: imageProduct2,
-        image3: imageProduct3,
-        image4: imageProduct4,
-        thumbnail1: imageProduct1Thumbnail,
-        thumbnail2: imageProduct2Thumbnail,
-        thumbnail3: imageProduct3Thumbnail,
-        thumbnail4: imageProduct4Thumbnail
+        images: [
+            { image: imageProduct1, thumbnail: imageProduct1Thumbnail },
+            { image: imageProduct2, thumbnail: imageProduct2Thumbnail },
+            { image: imageProduct3, thumbnail: imageProduct3Thumbnail },
+            { image: imageProduct4, thumbnail: imageProduct4Thumbnail }
+        ],
+        quantity: 0
     },
 ]
 

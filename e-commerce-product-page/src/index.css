@@ -49,3 +49,36 @@ nav ul li:hover::after {
 .element {
   opacity: 1;
 }
+
+
+.slide {
+  opacity: 0;
+  transition: opacity 1s ease;
+  display:none
+}
+
+.slide.active {
+  opacity: 1;
+  display:block;
+}
+
+.thumbnail{
+  opacity:1;
+}
+
+.thumbnail.active{
+  opacity: 0.3;
+  border-radius: 0px;
+}
+
+.thumbnailDiv{
+  background-color: hsl(0, 0%, 100%);
+}
+
+.thumbnailDiv.active{
+  border: solid 2px hsl(26, 100%, 55%);
+  }
+
+.thumbnail:hover{
+  opacity:0.5;
+}

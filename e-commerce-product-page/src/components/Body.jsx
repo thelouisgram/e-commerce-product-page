@@ -1,18 +1,14 @@
 import React from 'react';
 import { iconMinus, iconPlus } from '../assets';
+import ImageSlide from './ImageSlide';
 
 const Body = ({...props}) => {
 	return (
-		<section className="md:py-16 flex-col flex md:flex-row w-full font-Kumbh">
+		<section className="md:py-16 flex-col md:gap-4 flex md:flex-row w-full font-Kumbh">
 			{/* left div */}
-			<div className="flex-1 flex">
+			<div className="flex-1 flex justify-center">
 				{/* Desktop Product image */}
-				<div className="w-full md:w-[400px] hidden md:flex items-center mx-auto justify-center">
-					<img src={props.image1} className=" w-[100%] rounded-[10px] h-[100%]" />
-				</div>
-				<div className="md:hidden block w-[100%] h-[325px] ">
-					<img src={props.image1} className="md:hidden block object-cover w-[100%]  h-[100%]" />
-				</div>
+				<ImageSlide {...props} />
 			</div>
 			{/* Right Div */}
 			<div className="flex-1 flex-col flex p-6 md:p-0 justify-center">
@@ -49,7 +45,7 @@ const Body = ({...props}) => {
                         <div className="cursor-pointer hover:opacity-[0.5] py-[12px] px-[18px] ss:px-[12px]">
 							<img src={iconMinus} />
 						</div>
-						<div className="py-[12px] px-[18px] ss:px-[12px] font-bold">0</div>
+						<div className="py-[12px] px-[18px] ss:px-[12px] font-bold">{props.quantity}</div>
                         <div className=" cursor-pointer hover:opacity-[0.5] py-[12px] px-[18px] ss:px-[12px]">
 							<img src={iconPlus} />
 						</div>
