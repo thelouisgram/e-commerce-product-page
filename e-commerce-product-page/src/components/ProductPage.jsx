@@ -43,13 +43,14 @@ const ProductPage = ({ product, currentSlide, setCurrentSlide, lightBox, setLigh
 				{/* Product price */}
 				<div className="flex flex-row items-center ss:flex-col mb-4 ss:items-start justify-between">
 					<div className="flex flex-row items-center">
-						<h3 className="text-veryDarkBlue text-[24px] font-[700] mr-4">${product.price}</h3>
+						<h3 className="text-veryDarkBlue text-[24px] font-[700] mr-4">${product.price}.00</h3>
 						<div className="bg-paleOrange px-[6px] rounded-[5px] py-[1px]">
 							<h4 className="text-orange text-[14px] font-[700]">{product.discount}</h4>
 						</div>
 					</div>
 					<div>
-						<h5 className="text-grayishBlue font-[600] text-[16px] line-through">${product.oldPrice}</h5>
+						<h5 className="text-grayishBlue font-[600] text-[16px] line-through">
+							${product.oldPrice}.00</h5>
 					</div>
 				</div>
 
@@ -70,10 +71,13 @@ const ProductPage = ({ product, currentSlide, setCurrentSlide, lightBox, setLigh
 						</div>
 					</div>
 					<div 
-						onClick={()=>addToCart(product)}
-						className="bg-orange cursor-pointer hover:text-veryDarkBlue mb-4 hover:bg-paleOrange
+						onClick={()=>addToCart(product, product.id)}
+						className="bg-orange cursor-pointer hover:text-veryDarkBlue mb-4 hover:bg-lightGrayishBlue
                     text-white  h-[50px] w-full ss:w-[250px]
-                     justify-center rounded-[10px] font-bold text-[14px] flex items-center">
+                     justify-center rounded-[10px] font-bold text-[14px] gap-2 flex items-center">
+						<span class="material-symbols-rounded">
+							shopping_cart
+						</span>
 						<h5>Add to cart</h5>
 					</div>
 				</div>

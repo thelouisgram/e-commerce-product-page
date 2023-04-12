@@ -56,7 +56,9 @@ const LightBox = ({ product, setLightBox, currentSlide, setCurrentSlide }) => {
         bg-black">
 			<div className="flex flex-col w-[450px] mb-6 items-center">
 				<div onClick={toggleLightBox} className="flex w-full mb-4 justify-end cursor-pointer">
-					<img src={iconClose} className="flex justify-end" />
+					<span
+						class="material-symbols-rounded cursor-pointer
+          				text-white hover:text-orange">close</span>
 				</div>
 				<div className="max-w-full mb-6 flex items-center md:h-auto relative">
 					{/* prev btn */}
