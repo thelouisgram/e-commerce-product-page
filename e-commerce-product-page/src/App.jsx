@@ -121,24 +121,21 @@ const App = () => {
 			/>
 		);
 	});
-	// save cart to localStorage
-	useEffect(
-		() => {
-			localStorage.setItem('cart', JSON.stringify(cart));
-		},
-		[ cart ]
-	);
 
-	// get cart from localStorage
+	// Local Storage
 	useEffect(() => {
-		const savedCart = localStorage.getItem('cart');
-		if (savedCart) {
-			setCart(JSON.parse(savedCart));
+		const storedCart = localStorage.getItem('cart');
+		if (storedCart) {
+			setCart(JSON.parse(storedCart));
 		}
 	}, []);
 
+	useEffect(() => {
+		localStorage.setItem('cart', JSON.stringify(cart));
+	}, [cart]);
+
 	return (
-		<section id="root" className="bg-white w-full md:px-32 relative">
+		<section id="root" className="bg-white w-full md:px-32 relative" >
 			<Header setMenu={setMenu} setActiveCart={setActiveCart} cartTotal={cartTotal} />
 			{newProducts}
 			{menu && <Menu setMenu={setMenu} menu={menu} />}
