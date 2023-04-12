@@ -9,10 +9,10 @@ const Header = ({ setActiveCart, setMenu, cartTotal }) => {
 		setMenu((prev) => !prev);
 	};
 	return (
-		<nav className="py-4 px-6 w-full md:py-8 md:border-b-[1px] border-grayishBlue flex items-center justify-between">
+		<nav className="py-4 px-6 md:px-0 w-full md:py-10 md:border-b-[1px] border-lightGrayishBlue1 flex items-center justify-between">
 			<div className="flex items-center">
 				<img src={iconMenu} onClick={toggleMenu} className="mr-4 h-[16px] cursor-pointer w-[auto] md:hidden" />
-				<img src={logo} className="md:mr-12 h-[20px] md:h-[24px] w-[auto]" />
+				<img src={logo} className="md:mr-12 h-[20px] md:h-[20px] w-[auto]" />
 				<ul className="hidden md:flex flex-row gap-8 text-darkGrayishBlue font-Kumbh text-[14px]">
 					<li className="hover:text-black cursor-pointer">Collections</li>
 					<li className="hover:text-black cursor-pointer">Men</li>

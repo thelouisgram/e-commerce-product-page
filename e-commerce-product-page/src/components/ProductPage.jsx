@@ -6,7 +6,7 @@ import LightBox from './LightBox';
 const ProductPage = ({ product, currentSlide, setCurrentSlide, lightBox, setLightBox, orderNumber,
 	addOrderNumber, minusOrderNumber, addToCart }) => {
 	return (
-		<section className="md:py-16 flex-col md:gap-4 flex md:flex-row w-full font-Kumbh">
+		<section className="md:py-20 flex-col md:gap-4 flex md:flex-row w-full font-Kumbh">
 			{lightBox && (
 				<LightBox
 					product={product}

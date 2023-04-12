@@ -69,7 +69,7 @@ const ProductImage = ({ product, currentSlide, setCurrentSlide, setLightBox }) =
 			onMouseOver={showBtn}
 			onMouseLeave={hideBtn} 
 			className="w-full  flex md:flex-col items-center   md:h-auto">
-			<div className="w-full h-[345px] ss:h-[525px] md:max-w-[400px] md-4 md:mb-6 flex
+			<div className="w-full h-[345px] ss:h-[525px] md:max-w-[425px] md-4 md:mb-6 flex
              items-center  md:h-auto">
 				{/* prev btn */}
 				{btn && <div
@@ -89,7 +89,7 @@ const ProductImage = ({ product, currentSlide, setCurrentSlide, setLightBox }) =
 					<img src={iconNext} />
 				</div>}
 			</div>
-			<div className="hidden w-[400px] md:flex justify-between">{thumbnailSlide}</div>
+			<div className="hidden w-[425px] md:flex justify-between">{thumbnailSlide}</div>
 		</section>
 	);
 };
