@@ -3,7 +3,8 @@ import { iconMinus, iconPlus } from '../assets';
 import ProductImage from './ProductImage';
 import LightBox from './LightBox';
 
-const ProductPage = ({ product, currentSlide, setCurrentSlide, lightBox, setLightBox }) => {
+const ProductPage = ({ product, currentSlide, setCurrentSlide, lightBox, setLightBox, orderNumber,
+	addOrderNumber, minusOrderNumber, addToCart }) => {
 	return (
 		<section className="md:py-16 flex-col md:gap-4 flex md:flex-row w-full font-Kumbh">
 			{lightBox && (
@@ -56,16 +57,22 @@ const ProductPage = ({ product, currentSlide, setCurrentSlide, lightBox, setLigh
 				<div className="flex flex-col  ss:flex-row gap-4">
 					<div className="bg-lightGrayishBlue h-[50px] w-full ss:w-[125px] 
                     justify-between rounded-[10px] flex items-center">
-						<div className="cursor-pointer hover:opacity-[0.5] py-[12px] px-[18px] ss:px-[12px]">
+						<div 
+							onClick={minusOrderNumber}
+							className="cursor-pointer hover:opacity-[0.5] py-[12px] px-[18px] ss:px-[12px]">
 							<img src={iconMinus} />
 						</div>
-						<div className="py-[12px] px-[18px] ss:px-[12px] font-bold">{product.quantity}</div>
-						<div className=" cursor-pointer hover:opacity-[0.5] py-[12px] px-[18px] ss:px-[12px]">
+						<div className="py-[12px] px-[18px] ss:px-[12px] font-bold">{orderNumber}</div>
+						<div 
+							onClick={addOrderNumber}
+							className=" cursor-pointer hover:opacity-[0.5] py-[12px] px-[18px] ss:px-[12px]">
 							<img src={iconPlus} />
 						</div>
 					</div>
-					<div className="bg-orange cursor-pointer hover:text-veryDarkBlue mb-4 hover:bg-paleOrange
-                     text-white  h-[50px] w-full ss:w-[250px]
+					<div 
+						onClick={()=>addToCart(product)}
+						className="bg-orange cursor-pointer hover:text-veryDarkBlue mb-4 hover:bg-paleOrange
+                    text-white  h-[50px] w-full ss:w-[250px]
                      justify-center rounded-[10px] font-bold text-[14px] flex items-center">
 						<h5>Add to cart</h5>
 					</div>

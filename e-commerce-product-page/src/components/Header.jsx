@@ -25,7 +25,11 @@ const Header = ({ setActiveCart, setMenu }) => {
 			<div className="flex items-center">
 				<div 
 					onClick={toggleCart}
-					className="cursor-pointer mr-4 md:mr-8">
+					className="cursor-pointer mr-4 md:mr-8 w-[35px] h-[30px] flex items-center
+					 justify-center relative">
+					<div className='min-h-[12px] min-w-[auto] px-[8px] pt-[2px] flex justify-center items-center
+					 absolute top-0 right-0 z-1 bg-orange text-[9px] text-white
+					font-Kumbh rounded-full'>0</div>
 					<img src={iconCart} className="w-[20px] h-[20px] " />
 				</div>
 				<div className="w-[34px] h-[34px] md:w-[50px] md:h-[50px] p-[2px] hover:bg-orange rounded-full cursor-pointer">

@@ -24,7 +24,7 @@ const data = [
             { image: imageProduct3, thumbnail: imageProduct3Thumbnail },
             { image: imageProduct4, thumbnail: imageProduct4Thumbnail }
         ],
-        quantity: 0
+        quantity:2,
     },
 ]
 
