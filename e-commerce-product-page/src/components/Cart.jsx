@@ -3,7 +3,7 @@ import React from 'react';
 const Cart = ({ cart, cartItems }) => {
 	return (
 		<section className="top-[80px] w-full px-2 md:p-0 md-w-[300px] absolute flex  md:justify-end 
-		font-Kumbh md:right-[100px] md:top-[90px]">
+		font-Kumbh md:right-[90px] md:top-[90px]">
 			<div className="bg-white rounded-[10px] md:w-[300px] box  w-full ">
 				<div className="border-b-[2px] p-4 border-lightGrayishBlue">
 					<h4 className="font-[700] text-veryDarkBlue">Cart</h4>
