@@ -46,7 +46,7 @@ Users should be able to:
   
 ### Links
 
-- [Live Site URL]([https://to-do-app-tawny-sigma.vercel.app](https://e-commerce-product-page-six-phi.vercel.app/)/)
+- [Live Site URL](https://e-commerce-product-page-six-phi.vercel.app/)
 
 ## My process
 
