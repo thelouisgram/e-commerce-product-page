@@ -48,7 +48,7 @@ const ProductImage = ({ product, currentSlide, setCurrentSlide, setLightBox }) =
 			>
 				<img
 					className={`thumbnail ${index === currentSlide ? 'active' : ''} 
-                rounded-[8px] w-[80px] h-[80px]`}
+                rounded-[8px] w-[90px] h-[90px]`}
 					src={thumbnail.thumbnail}
 					alt={`Thumbnail ${index}`}
 				/>
