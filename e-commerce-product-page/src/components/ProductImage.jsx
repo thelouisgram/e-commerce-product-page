@@ -5,14 +5,6 @@ const ProductImage = ({ product, currentSlide, setCurrentSlide, setLightBox }) =
 	const slides = product.images;
 	const [btn, setBtn] = useState(false)
 
-	const hideBtn = () => {
-		setBtn(false)
-	}
-
-	const showBtn = () => {
-		setBtn(true)
-	}
-
 	const toggleLightBox = () => {
 		setLightBox(true);
 	};
@@ -66,8 +58,7 @@ const ProductImage = ({ product, currentSlide, setCurrentSlide, setLightBox }) =
 
 	return (
 		<section 
-			onMouseOver={showBtn}
-			onMouseLeave={hideBtn} 
+			
 			className="w-full  flex md:flex-col items-center   md:h-auto">
 			<div className="w-full h-[345px] ss:h-[525px] md:max-w-[425px] md-4 md:mb-6 flex
              items-center  md:h-auto">
