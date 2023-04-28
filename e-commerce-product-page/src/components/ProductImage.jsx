@@ -1,9 +1,7 @@
 import { iconPrevious, iconNext } from '../assets';
-import {useState} from 'react'
 
 const ProductImage = ({ product, currentSlide, setCurrentSlide, setLightBox }) => {
 	const slides = product.images;
-	const [btn, setBtn] = useState(false)
 
 	const toggleLightBox = () => {
 		setLightBox(true);
@@ -63,22 +61,22 @@ const ProductImage = ({ product, currentSlide, setCurrentSlide, setLightBox }) =
 			<div className="w-full h-[345px] ss:h-[525px] md:max-w-[425px] md-4 md:mb-6 flex
              items-center  md:h-auto">
 				{/* prev btn */}
-				{btn && <div
+				<div
 					onClick={prevSlide}
 					className="absolute md:hidden bg-white h-[40px] w-[40px]
                     p-2 rounded-full flex justify-center items-center left-[4%] cursor-pointer"
 				>
 					<img src={iconPrevious} />
-				</div>}
+				</div>
 				{ProductImage}
 				{/* Next btn */}
-				{ btn && <div
+				<div
 					onClick={nextSlide}
 					className="absolute md:hidden bg-white h-[40px] w-[40px]
                     p-2 rounded-full flex justify-center items-center right-[4%] cursor-pointer"
 				>
 					<img src={iconNext} />
-				</div>}
+				</div>
 			</div>
 			<div className="hidden w-[425px] md:flex justify-between">{thumbnailSlide}</div>
 		</section>
