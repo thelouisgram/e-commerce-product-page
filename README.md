@@ -1,6 +1,6 @@
-# Frontend Mentor - Todo App
+# Frontend Mentor - E-Commerce Product Page
 
-This is a solution to the [Todo App challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6).
+This is a solution to the [E-Commerce Product Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6).
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 <img src="https://github.com/thelouisgram/e-commerce-product-page/blob/main/e-commerce-product-page/src/assets/e-commerce-product-page-challenge.webp">
